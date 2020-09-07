@@ -1,4 +1,4 @@
-package com.service.pay;
+package com.service.pay.enums;
 
 /**
  * 支付方式枚举类

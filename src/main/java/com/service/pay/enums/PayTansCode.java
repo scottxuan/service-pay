@@ -1,4 +1,4 @@
-package com.service.pay;
+package com.service.pay.enums;
 
 /**
  * @author scottxuan

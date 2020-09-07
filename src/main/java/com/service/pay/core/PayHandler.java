@@ -1,10 +1,16 @@
-package com.service.pay;
+package com.service.pay.core;
 
 import com.google.common.collect.Maps;
+import com.service.pay.Order;
+import com.service.pay.enums.PayTansCode;
 import lombok.extern.slf4j.Slf4j;
 
 import java.math.BigDecimal;
 
+/**
+ * 支付相关操作类
+ * @author pc
+ */
 @Slf4j
 public class PayHandler {
 

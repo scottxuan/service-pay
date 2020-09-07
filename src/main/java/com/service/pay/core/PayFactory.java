@@ -1,4 +1,7 @@
-package com.service.pay;
+package com.service.pay.core;
+
+import com.service.pay.enums.PayType;
+import com.service.pay.wechat.WeChatPayQrCode;
 
 /**
  * 支付工厂类

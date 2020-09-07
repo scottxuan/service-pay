@@ -1,4 +1,5 @@
-package com.service.pay;
+package com.service.pay.core;
+
 
 import java.util.Map;
 
@@ -12,7 +13,7 @@ public interface PayCore {
      * @param order
      * @param params
      */
-    void payOrder(Order order, Map<String, String> params) throws Exception;
+    void payOrder(Object order, Map<String, String> params) throws Exception;
 
     /**
      * 订单查询
@@ -20,7 +21,7 @@ public interface PayCore {
      * @param payParams
      * @throws Exception
      */
-    void queryOrder(Order order, Map<String, String> payParams) throws Exception;
+    void queryOrder(Object order, Map<String, String> payParams) throws Exception;
 
     /**
      * 订单退款
@@ -28,7 +29,7 @@ public interface PayCore {
      * @param payParams
      * @throws Exception
      */
-    void refundOrder(Order order, Map<String, String> payParams) throws Exception;
+    void refundOrder(Object order, Map<String, String> payParams) throws Exception;
 
     /**
      * 订单退款查询
@@ -36,7 +37,7 @@ public interface PayCore {
      * @param payParams
      * @throws Exception
      */
-    void refundQuery(Order order, Map<String, String> payParams) throws Exception;
+    void refundQuery(Object order, Map<String, String> payParams) throws Exception;
 
     /**
      * 订单取消
@@ -44,7 +45,7 @@ public interface PayCore {
      * @param payParams
      * @throws Exception
      */
-    void cancelOrder(Order order, Map<String, String> payParams) throws Exception;
+    void cancelOrder(Object order, Map<String, String> payParams) throws Exception;
 
     /**
      * 关闭订单
@@ -52,6 +53,6 @@ public interface PayCore {
      * @param payParams
      * @throws Exception
      */
-    void closeOrder(Order order, Map<String, String> payParams) throws Exception;
+    void closeOrder(Object order, Map<String, String> payParams) throws Exception;
 
 }
